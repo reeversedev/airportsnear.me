@@ -9,6 +9,8 @@ import Airport from './Components/Airport'
 import { Subtitle, Section, App } from './Elements'
 
 const Main = () => {
+  // Need to try ipstack API, gives IP Address, Location and Coordinates
+
   const [position, error] = useCurrentPosition()
   const [airports, setAirports] = useState([])
   const [coords, setCoords] = useState(null)
